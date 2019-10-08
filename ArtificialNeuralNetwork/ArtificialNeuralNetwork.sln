@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtificialNeuralNetwork", "ArtificialNeuralNetwork\ArtificialNeuralNetwork.csproj", "{68E1ADCD-0E5F-41AE-AE3F-CBFCFC522F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "Math\Math.csproj", "{7AC411AC-7283-4993-A9E3-85DAD3AEC046}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68E1ADCD-0E5F-41AE-AE3F-CBFCFC522F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E1ADCD-0E5F-41AE-AE3F-CBFCFC522F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E1ADCD-0E5F-41AE-AE3F-CBFCFC522F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E1ADCD-0E5F-41AE-AE3F-CBFCFC522F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC411AC-7283-4993-A9E3-85DAD3AEC046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC411AC-7283-4993-A9E3-85DAD3AEC046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC411AC-7283-4993-A9E3-85DAD3AEC046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC411AC-7283-4993-A9E3-85DAD3AEC046}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94CF7EDF-0829-4CBA-A12D-A5A755C16D69}
+	EndGlobalSection
+EndGlobal
