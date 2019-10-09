@@ -6,15 +6,42 @@ namespace ArtificialNeuralNetwork
     public abstract class NeuralLayer
     {
         protected Neuron[] neurons;
-        protected double[] inputs;
-        protected double[] outputs;
+        public double[] inputs;
+        public double[] outputs;
 
         protected Func<double, double> activationFunction;
 
-        protected NeuralLayer previousLayer;
-        protected NeuralLayer nextLayer;
+        public NeuralLayer previousLayer;
+        public NeuralLayer nextLayer;
 
-        protected abstract void Init();
-        protected abstract void Calc();
+        public int NeuronCount { get { return neurons.Length; } }
+
+        protected NeuralLayer(int numberInputs, int numberNeurons, Func<double, double> activationFunction)
+        {
+            neurons = new Neuron[numberNeurons];
+
+            inputs = new double[numberInputs];
+            outputs = new double[numberNeurons];
+
+            Init();
+        }
+
+        private void Init()
+        {
+            for (int i = 0; i < neurons.Length; i++)
+            {
+                neurons[i] = new Neuron(inputs.Length, activationFunction);
+            }
+        }
+
+        public void Calc()
+        {
+            for (int i = 0; i < neurons.Length; i++)
+            {
+                neurons[i].inputs = inputs;
+                neurons[i].Calculate();
+                outputs[i] = neurons[i].Output;
+            }
+        }
     }
 }
