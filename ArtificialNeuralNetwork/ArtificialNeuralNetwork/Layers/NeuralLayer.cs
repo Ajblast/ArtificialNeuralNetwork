@@ -5,6 +5,11 @@ namespace ArtificialNeuralNetwork
 {
     public abstract class NeuralLayer
     {
+        public Neuron this[int i]
+        {
+            get { return neurons[i]; }
+        }
+
         protected Neuron[] neurons;
         public double[] inputs;
         public double[] outputs;

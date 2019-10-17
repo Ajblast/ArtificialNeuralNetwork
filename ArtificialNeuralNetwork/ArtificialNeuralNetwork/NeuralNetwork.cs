@@ -8,7 +8,10 @@ namespace ArtificialNeuralNetwork
     {
         private InputLayer inputLayer;
         private List<HiddenLayer> hiddenLayers;
-        private OutputLayer outputLayer;
+        public OutputLayer outputLayer { get; private set;}
+
+        public int NumberInputs { get { return inputLayer.NeuronCount; } }
+        public int NumberOutputs { get { return outputLayer.NeuronCount; } }
 
         public NeuralNetwork(int numberInputs, int numberOutputs, int[] numberOfHiddenNeurons, Func<double, double>[] hiddenActivationFunctions, Func<double, double> outputActivationFunction)
         {
