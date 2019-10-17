@@ -6,8 +6,6 @@ namespace ArtificialNeuralNetwork
 {
     public sealed class HiddenLayer : NeuralLayer
     {
-        public HiddenLayer (int numberInputs, int numberNeurons, Func<double, double> activationFuction) : base (numberInputs, numberNeurons, activationFuction)
-        {
-        }
+        public HiddenLayer(int numberInputs, int numberNeurons, Func<double, double> activationFuction) : base(numberInputs, numberNeurons, activationFuction) { }
     }
 }

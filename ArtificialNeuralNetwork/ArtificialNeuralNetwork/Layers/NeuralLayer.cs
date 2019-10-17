@@ -23,11 +23,6 @@ namespace ArtificialNeuralNetwork
             inputs = new double[numberInputs];
             outputs = new double[numberNeurons];
 
-            Init();
-        }
-
-        private void Init()
-        {
             for (int i = 0; i < neurons.Length; i++)
             {
                 neurons[i] = new Neuron(inputs.Length, activationFunction);

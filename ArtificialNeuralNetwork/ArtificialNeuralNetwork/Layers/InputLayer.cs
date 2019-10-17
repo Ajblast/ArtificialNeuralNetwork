@@ -5,8 +5,6 @@ namespace ArtificialNeuralNetwork
 {
     public sealed class InputLayer : NeuralLayer
     {
-        public InputLayer(int numberInputs) : base(numberInputs, numberInputs, (d) => { return d; })
-        {
-        }
+        public InputLayer(int numberInputs) : base(numberInputs, numberInputs, (d) => { return d; }) { }
     }
 }

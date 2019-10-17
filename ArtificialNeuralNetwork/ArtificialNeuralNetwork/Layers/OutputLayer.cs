@@ -6,9 +6,7 @@ namespace ArtificialNeuralNetwork
 {
     public sealed class OutputLayer : NeuralLayer
     {
-        public OutputLayer (int numberInputs, int numberNeurons, Func<double, double> activationFunction) : base (numberInputs, numberNeurons, activationFunction)
-        {
-        }
+        public OutputLayer(int numberInputs, int numberNeurons, Func<double, double> activationFunction) : base(numberInputs, numberNeurons, activationFunction) { }
 
     }
 }
